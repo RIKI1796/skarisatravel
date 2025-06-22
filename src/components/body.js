@@ -11,7 +11,7 @@ const body = () => {
             <option value="JKA">Jakarta(JKTA)</option>
             <option value="SBY">Surabaya (SBY)</option>
             <option value="DNPSR">Denpasar (DNPSR)</option>
-            <option value="BNDG">Bandung (BNDG)</option>
+            <option value="BNDG">Bandung (BDG)</option>
             <option value="SMRG">Semarang (SMRG)</option>
           </select>
         </div>
@@ -22,13 +22,16 @@ const body = () => {
             <option value="KUL">Kuala Lumpur (KUL)</option>
             <option value="JKA">Jakarta (JKTA)</option>
             <option value="DNPSR">Denpasar (DNPSR)</option>
-            <option value="BNGK">Bangkok (BNGK)</option>
+            <option value="BNGK">Bangkok (BGK)</option>
           </select>
         </div>
-      <section className="jadwal">
-        <label>Jadwal Pergi</label>
-        <input type="date" defaultValue={new Date().toISOString().split("T")[0]}></input>
-      </section>
+        <section className="jadwal">
+          <label>Jadwal Pergi</label>
+          <input
+            type="date"
+            defaultValue={new Date().toISOString().split("T")[0]}
+          ></input>
+        </section>
       </section>
     </>
   );
