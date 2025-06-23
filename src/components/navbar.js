@@ -6,14 +6,72 @@ import "../styles/navbar.css";
 const navbar = () => {
   useEffect(() => {
     const menuu = document.querySelectorAll(".menu-item");
-     menuu.forEach((el) => {
+    menuu.forEach((el) => {
       el.addEventListener("click", () => {
-        menuu.forEach(t => t.classList.remove("active"));
+        menuu.forEach((t) => t.classList.remove("active"));
         el.classList.add("active");
-      })
-     })
+      });
+    });
+    const hotel = document.getElementById("hotel");
+    const pesawat = document.getElementById("pesawat");
+    const kereta = document.getElementById("kereta");
+    const bus = document.getElementById("bus");
 
-    
+    hotel.onclick = () => {
+      document.querySelector(".destinasi1 label").textContent = "Lokasi";
+      document.querySelector(".destinasi2").style.display = "none";
+    };
+    pesawat.onclick = () => {
+      document.querySelector(".destinasi1 label").textContent = " Ke";
+      document.querySelector(".destinasi2").style.display = "grid";
+      document.querySelector(".destinasi2 #opsi1").value = "SIN";
+      document.querySelector(".destinasi2 #opsi2").value = "KUL";
+      document.querySelector(".destinasi2 #opsi3").value = "JKA";
+      document.querySelector(".destinasi2 #opsi4").value = "DNPSR";
+      document.querySelector(".destinasi2 #opsi5").value = "BNGK";
+      document.querySelector(".destinasi2 #opsi1").textContent =
+        "Singapore (SIN)";
+      document.querySelector(".destinasi2 #opsi2").textContent =
+        "Kuala Lumpur (KUL)";
+      document.querySelector(".destinasi2 #opsi3").textContent =
+        "Jakarta (JKTA)";
+      document.querySelector(".destinasi2 #opsi4").textContent =
+        "Denpasar (DNPSR)";
+      document.querySelector(".destinasi2 #opsi5").textContent =
+        "Bangkok (BGK)";
+    };
+    kereta.onclick = () => {
+      document.querySelector(".destinasi2 #opsi1").value = "BDG";
+      document.querySelector(".destinasi2 #opsi2").value = "SBY";
+      document.querySelector(".destinasi2 #opsi3").value = "SMRG";
+      document.querySelector(".destinasi2 #opsi4").value = "YGKRT";
+      document.querySelector(".destinasi2 #opsi5").value = "KRN";
+      document.querySelector(".destinasi2 #opsi1").textContent =
+        "Bandung (BDG)";
+      document.querySelector(".destinasi2 #opsi2").textContent =
+        "Surabaya (SBY)";
+      document.querySelector(".destinasi2 #opsi3").textContent =
+        "Semarang (SMRG)";
+      document.querySelector(".destinasi2 #opsi4").textContent =
+        "Yogyakarta (YGKRT)";
+      document.querySelector(".destinasi2 #opsi5").textContent = "Krian (KRN)";
+    };
+    bus.onclick = () => {
+      document.querySelector(".destinasi2 #opsi1").value = "BDG";
+      document.querySelector(".destinasi2 #opsi2").value = "SBY";
+      document.querySelector(".destinasi2 #opsi3").value = "SMRG";
+      document.querySelector(".destinasi2 #opsi4").value = "YGKRT";
+      document.querySelector(".destinasi2 #opsi5").value = "KRN";
+      document.querySelector(".destinasi2 #opsi1").textContent =
+        "Bandung (BDG)";
+      document.querySelector(".destinasi2 #opsi2").textContent =
+        "Surabaya (SBY)";
+      document.querySelector(".destinasi2 #opsi3").textContent =
+        "Semarang (SMRG)";
+      document.querySelector(".destinasi2 #opsi4").textContent =
+        "Yogyakarta (YGKRT)";
+      document.querySelector(".destinasi2 #opsi5").textContent = "Krian (KRN)";
+    };
   }, []);
   return (
     <>
@@ -38,7 +96,7 @@ const navbar = () => {
           <h2 className="busT">Tiket Bus</h2>
           <i className="bi bi-bus-front"></i>
         </div>
-      </div> 
+      </div>
     </>
   );
 };

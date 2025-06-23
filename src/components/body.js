@@ -18,11 +18,11 @@ const body = () => {
         <div className="destinasi2">
           <label>Ke</label>
           <select>
-            <option value="SIN">Singapore(SIN)</option>
-            <option value="KUL">Kuala Lumpur (KUL)</option>
-            <option value="JKA">Jakarta (JKTA)</option>
-            <option value="DNPSR">Denpasar (DNPSR)</option>
-            <option value="BNGK">Bangkok (BGK)</option>
+            <option id="opsi1" value="SIN">Singapore (SIN)</option>
+            <option id="opsi2" value="KUL">Kuala Lumpur (KUL)</option>
+            <option id="opsi3" value="JKA">Jakarta (JKTA)</option>
+            <option id="opsi4" value="DNPSR">Denpasar (DNPSR)</option>
+            <option id="opsi5" value="BNGK">Bangkok (BGK)</option>
           </select>
         </div>
         <section className="jadwal">
