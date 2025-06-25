@@ -29,6 +29,7 @@ const navbar = () => {
       document.querySelector(".kelas").classList.remove("d-none");
       document.querySelector(".destinasi1 label").textContent = "Dari";
       document.querySelector(".destinasi2").style.display = "grid";
+      document.querySelector(".jadwal label").textContent = "Jadwal Pergi";
       document
         .querySelector(".penumpang")
         .classList.replace("d-none", "d-flex");
@@ -51,6 +52,7 @@ const navbar = () => {
     kereta.onclick = () => {
       document.querySelector(".kelas").classList.remove("d-none");
       document.querySelector(".destinasi1 label").textContent = "Dari";
+      document.querySelector(".jadwal label").textContent = "Jadwal Pergi";
       document.querySelector(".destinasi2").style.display = "grid";
       document
         .querySelector(".penumpang")
@@ -73,6 +75,7 @@ const navbar = () => {
     bus.onclick = () => {
       document.querySelector(".kelas").classList.add("d-none");
       document.querySelector(".destinasi2").style.display = "grid";
+      document.querySelector(".jadwal label").textContent = "Jadwal Pergi";
       document
         .querySelector(".penumpang")
         .classList.replace("d-none", "d-flex");
