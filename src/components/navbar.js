@@ -50,6 +50,7 @@ const navbar = () => {
     };
     kereta.onclick = () => {
       document.querySelector(".kelas").classList.remove("d-none");
+      document.querySelector(".destinasi1 label").textContent = "Dari";
       document.querySelector(".destinasi2").style.display = "grid";
       document
         .querySelector(".penumpang")
