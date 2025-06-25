@@ -8,7 +8,7 @@ nav {
   z-index: 100;
 }
 
-.bi-airplane {
+nav .bi-airplane {
   font-size: 40px;
   display: flex;
   align-items: center;
@@ -52,16 +52,9 @@ nav {
 }
 .bi-building-fill,
 .bi-train-front-fill,
-.bi-bus-front {
+.bi-bus-front,
+.bi-airplane-fill {
   font-size: 25px;
-}
-.pesawat .bi-airplane {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 15px;
-  height: 100%;
-  margin-top: -15px;
 }
 .menu-item {
   color: white;
@@ -70,4 +63,14 @@ nav {
 .menu-item.active {
   background-color: white;
   color: orange;
+}
+
+nav h2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  height: 100%;
+  margin-left: auto; 
+  margin-right: 50px; 
 }

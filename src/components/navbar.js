@@ -20,10 +20,18 @@ const navbar = () => {
     hotel.onclick = () => {
       document.querySelector(".destinasi1 label").textContent = "Lokasi";
       document.querySelector(".destinasi2").style.display = "none";
+      document.querySelector(".jadwal label").textContent = "Jadwal Menginap";
+      document
+        .querySelector(".penumpang")
+        .classList.replace("d-flex", "d-none");
     };
     pesawat.onclick = () => {
-      document.querySelector(".destinasi1 label").textContent = " Ke";
+      document.querySelector(".kelas").classList.remove("d-none");
+      document.querySelector(".destinasi1 label").textContent = "Dari";
       document.querySelector(".destinasi2").style.display = "grid";
+      document
+        .querySelector(".penumpang")
+        .classList.replace("d-none", "d-flex");
       document.querySelector(".destinasi2 #opsi1").value = "SIN";
       document.querySelector(".destinasi2 #opsi2").value = "KUL";
       document.querySelector(".destinasi2 #opsi3").value = "JKA";
@@ -41,6 +49,11 @@ const navbar = () => {
         "Bangkok (BGK)";
     };
     kereta.onclick = () => {
+      document.querySelector(".kelas").classList.remove("d-none");
+      document.querySelector(".destinasi2").style.display = "grid";
+      document
+        .querySelector(".penumpang")
+        .classList.replace("d-none", "d-flex");
       document.querySelector(".destinasi2 #opsi1").value = "BDG";
       document.querySelector(".destinasi2 #opsi2").value = "SBY";
       document.querySelector(".destinasi2 #opsi3").value = "SMRG";
@@ -57,6 +70,12 @@ const navbar = () => {
       document.querySelector(".destinasi2 #opsi5").textContent = "Krian (KRN)";
     };
     bus.onclick = () => {
+      document.querySelector(".kelas").classList.add("d-none");
+      document.querySelector(".destinasi2").style.display = "grid";
+      document
+        .querySelector(".penumpang")
+        .classList.replace("d-none", "d-flex");
+      document.querySelector(".destinasi1 label").textContent = "Dari";
       document.querySelector(".destinasi2 #opsi1").value = "BDG";
       document.querySelector(".destinasi2 #opsi2").value = "SBY";
       document.querySelector(".destinasi2 #opsi3").value = "SMRG";
@@ -78,6 +97,7 @@ const navbar = () => {
       <nav>
         <i className="bi bi-airplane"></i>
         <h1 className="judul">SKARISATravel</h1>
+        <h2>Pesanan</h2>
       </nav>
       <div className="menu">
         <div id="hotel" className="menu-item hotel">
@@ -86,7 +106,7 @@ const navbar = () => {
         </div>
         <div id="pesawat" className="menu-item active pesawat">
           <h2 className="pesawatT">Tiket Pesawat</h2>
-          <i className="bi bi-airplane"></i>
+          <i className="bi bi-airplane-fill"></i>
         </div>
         <div id="kereta" className="menu-item kereta">
           <h2 className="keretaT">Tiket Kereta Api</h2>

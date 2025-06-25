@@ -1,29 +1,43 @@
 .destinasi {
-    color: white;
-    display: flex;
-    margin-left: 50px;
-    margin-top: 40px;
-    gap: 10px;
+  color: white;
+  display: flex;
+  margin-left: 50px;
+  margin-top: 40px;
+  gap: 10px;
 }
 
 .destinasi1,
 .destinasi2 {
-    display: grid;
+  display: grid;
 }
 .destinasi1 select,
 .destinasi2 select,
 .jadwal input {
-    border: 1px solid orange;
-    background-color: white;
-    height: 5dvh;
-    color: black;
-    width: 30dvh;
-    border-radius: 5px;
+  border: 1px solid orange;
+  background-color: white;
+  height: 5dvh;
+  color: black;
+  width: 30dvh;
+  border-radius: 5px;
 }
 
 .jadwal {
-    color: white;
-    width: 30dvh;
-    margin-left: 50dvh;
-    display: grid;
+  color: white;
+  width: 30dvh;
+  margin-left: 50dvh;
+  display: grid;
 }
+
+.penumpang select option {
+  background-color: rgb(136, 136, 136);
+}
+.penumpang {
+  color: rgb(255, 208, 0);
+}
+
+select {
+  cursor: pointer;
+}
+ input {
+  cursor: pointer;
+ }
