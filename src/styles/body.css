@@ -1,3 +1,15 @@
+select,
+input {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid orange;
+  background-color: white;
+  height: 5dvh;
+  color: black;
+  width: 30dvh;
+  box-sizing: border-box;
+}
+
 .destinasi {
   color: white;
   display: flex;
@@ -10,6 +22,7 @@
 .destinasi2 {
   display: grid;
 }
+
 .destinasi1 select,
 .destinasi2 select,
 .jadwal input {
@@ -28,16 +41,27 @@
   display: grid;
 }
 
-.penumpang select option {
-  background-color: rgb(136, 136, 136);
-}
 .penumpang {
   color: rgb(255, 208, 0);
 }
 
-select {
-  cursor: pointer;
+.penumpang select {
+  color: rgb(255, 208, 0);
+  width: 35dvh;
 }
- input {
-  cursor: pointer;
- }
+
+.penumpang select option {
+  background-color: rgb(136, 136, 136);
+}
+
+.custom-select {
+  background-color: rgba(255, 255, 255, 0.247);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  width: 30dvh;
+}
+
+.ml-custom {
+  margin-left: 400px;
+}
